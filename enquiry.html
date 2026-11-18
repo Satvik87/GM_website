@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#14283a" />
+  <meta name="description" content="Contact GRAY Mobility about commercial electric mobility solutions." />
+  <title>Start an Enquiry — GRAY Mobility</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="enquiry.css" />
+</head>
+<body class="enquiry-page">
+  <header class="site-header enquiry-header" id="top">
+    <a class="brand" href="index.html#top" aria-label="GRAY Mobility home">
+      <img class="brand-logo" src="assets/gray-mobility-logo-white.png" alt="GRAY Mobility">
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html#platform">Platform</a>
+      <a href="index.html#transformation">Vehicles</a>
+      <a href="index.html#technology">Technology</a>
+      <a href="index.html#company">Utilities</a>
+      <a href="index.html#contact" class="enquiry-nav-active">Contact</a>
+    </nav>
+    <a class="enquiry-back-link" href="index.html#contact">Back to website <span>↗</span></a>
+  </header>
+
+  <main class="enquiry-main">
+    <section class="enquiry-intro">
+      <p class="eyebrow"><span class="eyebrow-line"></span> GRAY MOBILITY / ENQUIRY</p>
+      <div class="enquiry-heading-grid">
+        <div>
+          <h1>Let's start<br><em>a conversation.</em></h1>
+        </div>
+        <div class="enquiry-intro-copy">
+          <p>Tell us a little about what you're looking for. Whether you're planning a fleet, exploring a vehicle application or considering a partnership, we'd be glad to hear from you.</p>
+          <span class="enquiry-reference">A BETTER WAY FORWARD STARTS HERE.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="enquiry-form-section" aria-labelledby="formHeading">
+      <div class="enquiry-form-aside">
+        <p class="section-kicker"><span>YOUR DETAILS</span></p>
+        <h2 id="formHeading">Start an enquiry.</h2>
+        <p>Share your details and requirements using the form. Fields marked with an asterisk are required.</p>
+        <div class="enquiry-aside-note">
+          <span class="live-dot"></span>
+          <span>GRAY MOBILITY · INDIA</span>
+        </div>
+      </div>
+
+      <form class="enquiry-form" id="enquiryForm" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="fullName">Full name <span>*</span></label>
+            <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="Enter your full name" required minlength="2" maxlength="100" />
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+          <div class="form-field">
+            <label for="phone">Contact number <span>*</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91 98765 43210" required maxlength="20" />
+            <small class="field-hint">Include your country code.</small>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+          <div class="form-field form-field-wide">
+            <label for="email">Email address <span>*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="name@company.com" required maxlength="150" />
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+          <div class="form-field">
+            <label for="city">City / Location <span>*</span></label>
+            <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="Enter your city" required maxlength="100" />
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+          <div class="form-field">
+            <label for="customerType">Enquiry type <span>*</span></label>
+            <select id="customerType" name="customerType" required>
+              <option value="" selected disabled>Select an option</option>
+              <option value="Company / Business">Company / Business</option>
+              <option value="Individual">Individual</option>
+            </select>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+          <div class="form-field form-field-wide is-hidden" id="companyField">
+            <label for="companyName">Company / Organisation name <span>*</span></label>
+            <input id="companyName" name="companyName" type="text" autocomplete="organization" placeholder="Enter your company name" maxlength="150" />
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+          <div class="form-field">
+            <label for="interest">Vehicle / Application of interest</label>
+            <select id="interest" name="interest">
+              <option value="" selected>Select an application (optional)</option>
+              <option>Truck</option>
+              <option>Staff</option>
+              <option>School</option>
+              <option>Ambulance</option>
+              <option>Cargo / Reefer</option>
+              <option>Platform / Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-field form-field-wide">
+            <label for="message">Tell us about your requirements</label>
+            <textarea id="message" name="message" rows="5" maxlength="2000" placeholder="Share a few details about your fleet, application or enquiry (optional)."></textarea>
+            <small class="field-hint">Please do not include confidential or sensitive information.</small>
+          </div>
+        </div>
+
+        <div class="form-consent">
+          <input id="consent" name="consent" type="checkbox" required />
+          <label for="consent">I agree that GRAY Mobility may use the information provided to respond to this enquiry. <span>*</span></label>
+        </div>
+        <small class="consent-error" id="consentError" aria-live="polite"></small>
+
+        <div class="form-submit-row">
+          <button class="button button-dark" type="submit">Submit enquiry <span>↗</span></button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer enquiry-footer">
+    <span>© <span id="year"></span> GRAY Mobility. All rights reserved.</span>
+    <a href="index.html#contact">Return to website ↗</a>
+  </footer>
+
+  <div class="success-overlay" id="successOverlay" role="dialog" aria-modal="true" aria-labelledby="successTitle" aria-describedby="successDescription" hidden>
+    <div class="success-dialog">
+      <div class="success-icon-wrap"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M17 33l10 10 21-23"/></svg></div>
+      <p class="success-kicker">GRAY MOBILITY / ENQUIRY</p>
+      <h2 id="successTitle">Thank you for<br><em>your interest.</em></h2>
+      <p id="successDescription">Thank you for taking the time to explore GRAY Mobility and share your interest in our solutions.</p>
+      <p class="success-followup">We appreciate your interest in moving forward with us.</p>
+      <button type="button" class="button button-dark success-close" id="successClose">Return to website <span>↗</span></button>
+    </div>
+  </div>
+
+  <script src="enquiry.js"></script>
+</body>
+</html>

@@ -1,12 +1,13 @@
 const vehicles = {
-  staff: {image:'assets/staff-van-high-resolution.jpg',alt:'Staff van electric shuttle concept',name:'CORPORATE MOBILITY',eyebrow:'APPLICATION',status:'CONFIGURATION 01 / STAFF VAN',text:'A passenger transport configuration intended for corporate staff movement and managed fleet operations.'},
-  school: {image:'assets/school-shuttle.jpg',alt:'School van electric shuttle concept',name:'STUDENT MOBILITY',eyebrow:'APPLICATION',status:'CONFIGURATION 02 / SCHOOL VAN',text:'A mission-specific passenger transport concept for school operators, designed around the needs of daily routes and fleet operations.'},
-  ambulance: {image:'assets/ambulance.jpg',alt:'Emergency mobility vehicle concept',name:'EMERGENCY MOBILITY',eyebrow:'APPLICATION',status:'CONFIGURATION 03 / EMERGENCY RESPONSE',text:'An emergency response vehicle concept that adapts the common electric platform for specialist healthcare and response applications.'},
-  cargo: {image:'assets/reefer-van.jpg',alt:'Commercial transport electric van concept',name:'COMMERCIAL MOBILITY',eyebrow:'APPLICATION',status:'CONFIGURATION 04 / COMMERCIAL TRANSPORT',text:'A commercial transport concept for logistics and temperature-sensitive deliveries, with configurable cargo applications.'}
+  truck: {image:'assets/gray-truck.jpg',alt:'GRAY Mobility commercial electric truck',name:'COMMERCIAL TRUCK MOBILITY',eyebrow:'APPLICATION',status:'CONFIGURATION 01 / TRUCK',text:'A commercial truck configuration for freight transport and logistics operations.'},
+  staff: {image:'assets/staff-van-high-resolution.jpg',alt:'Staff van electric shuttle concept',name:'CORPORATE MOBILITY',eyebrow:'APPLICATION',status:'CONFIGURATION 02 / STAFF VAN',text:'A passenger transport configuration intended for corporate staff movement and managed fleet operations.'},
+  school: {image:'assets/school-shuttle.jpg',alt:'School van electric shuttle concept',name:'STUDENT MOBILITY',eyebrow:'APPLICATION',status:'CONFIGURATION 03 / SCHOOL VAN',text:'A mission-specific passenger transport concept for school operators, designed around the needs of daily routes and fleet operations.'},
+  ambulance: {image:'assets/ambulance.jpg',alt:'Emergency mobility vehicle concept',name:'EMERGENCY MOBILITY',eyebrow:'APPLICATION',status:'CONFIGURATION 04 / EMERGENCY RESPONSE',text:'An emergency response vehicle concept that adapts the common electric platform for specialist healthcare and response applications.'},
+  cargo: {image:'assets/reefer-van.jpg',alt:'Commercial transport electric van concept',name:'COMMERCIAL MOBILITY',eyebrow:'APPLICATION',status:'CONFIGURATION 05 / COMMERCIAL TRANSPORT',text:'A commercial transport concept for logistics and temperature-sensitive deliveries, with configurable cargo applications.'}
 };
 const visual = document.getElementById('vehicleVisual');
 const vehicleImage = document.getElementById('vehicleImage');
-let activeVehicle = 'staff';
+let activeVehicle = 'truck';
 function selectVehicle(key, shouldScroll=false){
   const item = vehicles[key]; if(!item) return;
   activeVehicle = key;
